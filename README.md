@@ -4,7 +4,7 @@
 Dr. Ahmed's Academic Profile Website
 
 ## Description
-This is a simple personal academic website designed to showcase Dr. Ahmed's research work, publications, and contact information. The website uses HTML and CSS for its structure and styling.
+This is a simple personal academic website designed to showcase Dr. Ahmed Abdeljawad's research work, publications, and contact information. The website uses HTML and CSS for its structure and styling.
 
 ## Features
 - **About Section**: Brief introduction and background.
@@ -54,8 +54,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 For inquiries, please email:
-- **Email**: [ahmed.research@example.com](mailto:ahmed.research@example.com)
-- **LinkedIn**: [linkedin.com/in/ahmed-profile](https://linkedin.com/in/ahmed-profile)
+- **Email**: [abdeljawad.ahmed@oeaw.ac.at](mailto:abdeljawad.ahmed@oeaw.ac.at)
+- **LinkedIn**: [https://www.linkedin.com/in/ahmed-abdeljawad-27a352172](https://www.linkedin.com/in/ahmed-abdeljawad-27a352172)
 
 ---
 
