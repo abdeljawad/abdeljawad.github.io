@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Ahmed Abdeljawad</title>
+  <meta name="author" content="Ahmed Abdeljawad">
+  <meta name="description" content="Research page of Ahmed Abdeljawad.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script>
+    (() => {
+      const valid = value => value === "light" || value === "dark";
+      let theme = null;
+
+      try {
+        const urlTheme = new URLSearchParams(window.location.search).get("theme");
+        if (valid(urlTheme)) theme = urlTheme;
+      } catch (_) {}
+
+      if (!theme) {
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          if (valid(savedTheme)) theme = savedTheme;
+        } catch (_) {}
+      }
+
+      if (!theme && window.location.protocol !== "file:") {
+        const match = document.cookie.match(/(?:^|;\s*)theme=(light|dark)(?:;|$)/);
+        if (match) theme = match[1];
+      }
+
+      if (!theme) {
+        theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+      }
+
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+  <link rel="icon" href="../assets/img/abdeljawad_ai.png">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script defer src="../assets/js/site.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container navbar" aria-label="Main navigation">
+      <a class="nav-brand" href="../index.html">Ahmed&nbsp; <strong>Abdeljawad</strong></a>
+
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="site-menu" data-menu>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="../index.html">About</a></li>
+          <li><a class="nav-link" href="index.html" aria-current="page">Research</a></li>
+          <li>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme" title="Change theme">
+              <svg class="icon theme-icon-moon" viewBox="0 0 1000 1000" aria-hidden="true"><path d="M553 1000C707 1000 849 930 942 815C956 798 940 773 919 777C676 823 454 637 454 392C454 251 529 122 652 52C671 41 666 12 645 8C615 3 584 0 553 0C277 0 53 224 53 500C53 776 277 1000 553 1000Z"/></svg>
+              <svg class="icon theme-icon-sun" viewBox="0 0 1000 1000" aria-hidden="true"><path d="M500 313C397 313 312 397 312 500C312 603 397 687 500 687C603 687 688 603 688 500C688 397 603 313 500 313ZM981 470 796 377 862 181C871 154 845 129 819 138L623 204 530 19C517-6 483-6 470 19L377 204 181 138C154 129 129 155 138 181L204 377 19 470C-6 483-6 517 19 530L204 623 138 819C129 846 155 871 181 862L377 796 470 981C482 1006 517 1006 530 981L622 796 819 862C846 871 870 845 861 819L796 623 981 530C1006 517 1006 483 981 470Z"/></svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container page-content research-page">
+    <header class="page-heading">
+      <h1>Research</h1>
+      <p class="post-description">to be added</p>
+    </header>
+    <article>
+      <p>To be added in the near future!</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Last updated: July, 2026.</div>
+  </footer>
+</body>
+</html>

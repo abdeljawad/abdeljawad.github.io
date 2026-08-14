@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="cQLSDxE2HoWUQrLwm0F5b7otqCrBkYF65uH7O1Ala5g">
+  <title>Ahmed Abdeljawad</title>
+  <meta name="author" content="Ahmed Abdeljawad">
+  <meta name="description" content="Ahmed Abdeljawad, Senior Research Scientist and FWF Principal Investigator working on mathematical foundations for neural networks and neural operators.">
+  <meta name="keywords" content="mathematics, data science, machine learning, approximation theory, neural networks, neural operators">
+
+  <!-- Roboto is retained to match the typography of the current online site. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <script>
+    (() => {
+      const valid = value => value === "light" || value === "dark";
+      let theme = null;
+
+      try {
+        const urlTheme = new URLSearchParams(window.location.search).get("theme");
+        if (valid(urlTheme)) theme = urlTheme;
+      } catch (_) {}
+
+      if (!theme) {
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          if (valid(savedTheme)) theme = savedTheme;
+        } catch (_) {}
+      }
+
+      if (!theme && window.location.protocol !== "file:") {
+        const match = document.cookie.match(/(?:^|;\s*)theme=(light|dark)(?:;|$)/);
+        if (match) theme = match[1];
+      }
+
+      if (!theme) {
+        theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+      }
+
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+  <link rel="icon" href="assets/img/abdeljawad_ai.png">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container navbar" aria-label="Main navigation">
+      <div class="social-links" aria-label="Academic and professional profiles">
+        <a class="icon-link" href="mailto:ahmed.abdeljawad@oeaw.ac.at" aria-label="Email" title="Email">
+          <svg class="icon" viewBox="0 0 1000 1000" aria-hidden="true"><path d="M981 373C937 407 879 450 680 595C640 624 570 689 500 688C431 688 361 625 320 595C121 450 63 407 19 373C11 367 0 372 0 382V781C0 833 42 875 94 875H906C958 875 1000 833 1000 781V382C1000 372 989 367 981 373ZM500 625C545 626 610 568 643 544C902 356 922 340 982 293C993 284 1000 270 1000 256V219C1000 167 958 125 906 125H94C42 125 0 167 0 219V256C0 270 7 284 18 293C78 340 98 356 357 544C390 568 455 626 500 625Z"/></svg>
+        </a>
+        <a class="icon-link" href="https://orcid.org/0000-0002-6185-3352" aria-label="ORCID" title="ORCID" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><path d="M356 207Q378 228 378 261Q378 295 356 317Q349 324 341 329Q333 333 321 336Q309 339 287 339H249V186H286Q307 186 317 188Q326 189 337 195Q347 200 356 207ZM81 81Q153 8 256 8Q359 8 432 81Q504 153 504 256Q504 359 432 432Q359 504 256 504Q153 504 81 432Q8 359 8 256Q8 153 81 81ZM174 366V160H144V366ZM159 139Q164 139 169 136Q174 133 177 129Q179 124 179 118Q179 110 173 104Q167 98 159 98Q151 98 145 104Q139 110 139 119Q139 127 145 133Q151 139 159 139ZM408 263Q408 234 394 210Q379 185 355 173Q331 160 289 160H220V365H284Q312 365 322 364Q331 362 343 358Q363 350 378 335Q392 321 400 302Q408 283 408 263Z"/></svg>
+        </a>
+        <a class="icon-link" href="https://scholar.google.com/citations?hl=en&amp;user=nGLdGMYAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" aria-label="Google Scholar" title="Google Scholar" target="_blank" rel="noopener noreferrer">
+          <svg class="icon scholar-icon" viewBox="0 0 384 512" aria-hidden="true"><path d="M344 107Q350 108 350 117V246Q350 249 349 252Q347 254 345 256Q342 257 339 257H335Q333 257 331 256Q328 254 327 252Q325 249 325 246V117Q325 107 331 107V90L274 136Q275 137 275 138Q276 139 276 139Q284 153 284 173Q284 188 279 201Q273 213 266 221Q259 228 252 235Q244 241 239 248Q233 255 233 262Q233 269 240 277Q247 284 257 292Q266 299 276 308Q286 316 293 330Q299 344 299 360Q299 382 288 400Q277 417 259 428Q241 438 221 443Q201 448 181 448Q168 448 155 446Q142 444 129 439Q116 434 106 427Q96 419 90 408Q83 396 83 381Q83 364 93 350Q102 335 118 325Q146 308 204 304Q191 287 191 272Q191 264 195 254Q188 255 181 255Q149 255 128 235Q106 214 106 182Q106 179 106 176H20L150 64H364L344 79ZM220 317Q216 316 210 316Q195 316 181 319Q167 322 154 328Q140 333 132 345Q123 356 123 372Q123 386 131 398Q138 409 150 416Q162 422 175 425Q189 429 202 429Q230 429 250 417Q269 404 269 378Q269 373 268 368Q266 363 265 359Q263 355 259 350Q255 346 252 343Q250 340 244 335Q238 330 237 329Q235 328 228 323Q221 318 220 317ZM244 195Q244 178 238 159Q232 140 219 125Q205 110 187 110Q167 110 157 125Q146 139 146 159Q146 177 152 195Q157 213 171 228Q184 242 202 242Q222 242 233 229Q244 215 244 195Z"/></svg>
+        </a>
+        <a class="icon-link" href="https://www.linkedin.com/in/ahmed-abdeljawad-27a352172" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 875 1000" aria-hidden="true"><path d="M812 63H62C28 63 0 91 0 126V874C0 909 28 937 62 937H812C846 937 875 909 875 874V126C875 91 846 63 812 63ZM264 813H135V395H265V813ZM200 338C158 338 124 304 124 263C124 222 158 187 200 187C241 187 275 222 275 263C275 305 242 338 200 338ZM751 813H621V609C621 561 620 499 554 499C486 499 476 552 476 606V813H346V395H470V452H472C489 419 532 385 595 385C726 385 751 472 751 584Z"/></svg>
+        </a>
+
+        <a class="icon-link" href="https://www.researchgate.net/profile/Ahmed-Abdeljawad" aria-label="ResearchGate" title="ResearchGate" target="_blank" rel="noopener noreferrer">
+
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.078.53 9 9 0 0 0-.05.727c-.01.282-.013.621-.013 1.016a31.121 31.123 0 0 0 .014 1.017 9 9 0 0 0 .05.727 7.946 7.946 0 0 0 .077.53h-.005a3.334 3.334 0 0 0 .113.438c.245.743.65 1.303 1.214 1.68.565.376 1.256.564 2.075.564.8 0 1.536-.213 2.105-.603.57-.39.94-.916 1.175-1.65.076-.235.135-.558.177-.93a10.9 10.9 0 0 0 .043-1.207v-.82c0-.095-.047-.142-.14-.142h-3.064c-.094 0-.14.047-.14.141v.956c0 .094.046.14.14.14h1.666c.056 0 .084.03.084.086 0 .36 0 .62-.036.865-.038.244-.1.447-.147.606-.108.385-.348.664-.638.876-.29.212-.738.35-1.227.35-.545 0-.901-.15-1.21-.353-.306-.203-.517-.454-.67-.915a3.136 3.136 0 0 1-.147-.762 17.366 17.367 0 0 1-.034-.656c-.01-.26-.014-.572-.014-.939a26.401 26.403 0 0 1 .014-.938 15.821 15.822 0 0 1 .035-.656 3.19 3.19 0 0 1 .148-.76 1.89 1.89 0 0 1 .742-1.01c.344-.244.593-.352 1.137-.352.508 0 .815.096 1.144.303.33.207.528.492.764.925.047.094.111.118.198.07l1.044-.43c.075-.048.09-.115.042-.199a3.549 3.549 0 0 0-.466-.742 3 3 0 0 0-.679-.607 3.313 3.313 0 0 0-.903-.41A4.068 4.068 0 0 0 19.586 0zM8.217 5.836c-1.69 0-3.036.086-4.297.086-1.146 0-2.291 0-3.007-.029v.831l1.088.2c.744.144 1.174.488 1.174 2.264v11.288c0 1.777-.43 2.12-1.174 2.263l-1.088.2v.832c.773-.029 2.12-.086 3.465-.086 1.29 0 2.951.057 3.667.086v-.831l-1.49-.2c-.773-.115-1.174-.487-1.174-2.264v-4.784c.688.057 1.29.057 2.206.057 1.748 3.123 3.41 5.472 4.355 6.56.86 1.032 2.177 1.691 3.839 1.691.487 0 1.003-.086 1.318-.23v-.744c-1.031 0-2.063-.716-2.808-1.518-1.26-1.376-2.95-3.582-4.355-6.074 2.32-.545 4.04-2.722 4.04-4.9 0-3.208-2.492-4.698-5.758-4.698zm-.515 1.29c2.406 0 3.839 1.26 3.839 3.552 0 2.263-1.547 3.782-4.097 3.782-.974 0-1.404-.03-2.063-.086v-7.19c.66-.059 1.547-.059 2.32-.059z"/></svg>
+
+                </a>
+        <a class="icon-link" href="https://www.oeaw.ac.at/de/ricam/staff/ahmed-abdeljawad" aria-label="Work profile" title="Work" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 1000 1000" aria-hidden="true"><path d="M625 656C625 673 611 687 594 687H406C389 687 375 673 375 656V563H0V844C0 894 44 937 94 937H906C956 937 1000 894 1000 844V563H625ZM906 250H750V156C750 106 706 63 656 63H344C294 63 250 106 250 156V250H94C44 250 0 294 0 344V500H1000V344C1000 294 956 250 906 250ZM625 250H375V187H625Z"/></svg>
+        </a>
+      </div>
+
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="site-menu" data-menu>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html" aria-current="page">About</a></li>
+          <li><a class="nav-link" href="projects/index.html">Research</a></li>
+          <li>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme" title="Change theme">
+              <svg class="icon theme-icon-moon" viewBox="0 0 1000 1000" aria-hidden="true"><path d="M553 1000C707 1000 849 930 942 815C956 798 940 773 919 777C676 823 454 637 454 392C454 251 529 122 652 52C671 41 666 12 645 8C615 3 584 0 553 0C277 0 53 224 53 500C53 776 277 1000 553 1000Z"/></svg>
+              <svg class="icon theme-icon-sun" viewBox="0 0 1000 1000" aria-hidden="true"><path d="M500 313C397 313 312 397 312 500C312 603 397 687 500 687C603 687 688 603 688 500C688 397 603 313 500 313ZM981 470 796 377 862 181C871 154 845 129 819 138L623 204 530 19C517-6 483-6 470 19L377 204 181 138C154 129 129 155 138 181L204 377 19 470C-6 483-6 517 19 530L204 623 138 819C129 846 155 871 181 862L377 796 470 981C482 1006 517 1006 530 981L622 796 819 862C846 871 870 845 861 819L796 623 981 530C1006 517 1006 483 981 470Z"/></svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container page-content">
+    <header class="page-heading">
+      <h1>Ahmed <strong>Abdeljawad</strong></h1>
+    </header>
+
+    <article>
+      <div class="profile">
+        <figure>
+          <img
+            id="profile-photo"
+            src="assets/img/abdeljawad.jpg"
+            srcset="assets/img/abdeljawad-480.webp 480w, assets/img/abdeljawad-800.webp 800w, assets/img/abdeljawad-1400.webp 1400w"
+            sizes="(max-width: 575.98px) calc(100vw - 30px), 231px"
+            width="800"
+            height="1203"
+            alt="Ahmed Abdeljawad"
+            decoding="async"
+            fetchpriority="high">
+        </figure>
+        <div class="address">
+          <p>0412, RICAM</p>
+          <p>Altenberger Straße 69</p>
+          <p>4040 Linz, Austria</p>
+        </div>
+      </div>
+
+      <div class="bio clearfix">
+        <p>
+          I am a <strong>Senior Research Scientist and FWF Principal Investigator</strong>
+          at the
+          <a href="https://www.oeaw.ac.at/ricam/" target="_blank" rel="noopener noreferrer">Radon Institute for Computational and Applied Mathematics (RICAM)</a>,
+          part of the Austrian Academy of Sciences (OeAW), where I work within the
+          Mathematical Data Science group led by
+          <a href="https://mds.univie.ac.at/people/univ-prof-dr-philipp-grohs/" target="_blank" rel="noopener noreferrer">Prof. Philipp Grohs</a>.
+          My research develops rigorous mathematical foundations for neural networks
+          and neural operators, with a particular focus on understanding how these
+          models represent and approximate functions and operators in high- and
+          infinite-dimensional settings.
+        </p>
+
+        <p>
+          I lead the &euro;439,656 FWF project
+          <em>Neural Networks in Infinite Dimensions</em> and serve as the OeAW partner
+          Principal Investigator in the &euro;1.58 million Horizon Europe MSCA Staff
+          Exchanges project
+          <em>Emerging Methods in Fourier Analysis, PDEs, Graphs and Machine Learning</em>.
+          I received my Ph.D. in Pure and Applied Mathematics from the University of
+          Turin under the supervision of
+          <a href="https://www.matematica.unito.it/do/docenti.pl/Alias?sandro.coriasco" target="_blank" rel="noopener noreferrer">Prof. Sandro Coriasco</a>.
+        </p>
+
+        <p>
+          Please feel free to contact me by
+          <a href="mailto:ahmed.abdeljawad@oeaw.ac.at">email</a>
+          or
+          <a href="https://www.linkedin.com/in/ahmed-abdeljawad-27a352172" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          to discuss potential collaborations, research visits, supervision, or scientific ideas.
+        </p>
+      </div>
+
+      <div class="contact-block">
+        <div class="contact-icons" aria-label="Contact links">
+          <a class="icon-link" href="mailto:ahmed.abdeljawad@oeaw.ac.at" aria-label="Email" title="Email">
+            <svg class="icon" viewBox="0 0 1000 1000" aria-hidden="true"><path d="M981 373C937 407 879 450 680 595C640 624 570 689 500 688C431 688 361 625 320 595C121 450 63 407 19 373C11 367 0 372 0 382V781C0 833 42 875 94 875H906C958 875 1000 833 1000 781V382C1000 372 989 367 981 373ZM500 625C545 626 610 568 643 544C902 356 922 340 982 293C993 284 1000 270 1000 256V219C1000 167 958 125 906 125H94C42 125 0 167 0 219V256C0 270 7 284 18 293C78 340 98 356 357 544C390 568 455 626 500 625Z"/></svg>
+          </a>
+          <a class="icon-link" href="https://orcid.org/0000-0002-6185-3352" aria-label="ORCID" title="ORCID" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><path d="M356 207Q378 228 378 261Q378 295 356 317Q349 324 341 329Q333 333 321 336Q309 339 287 339H249V186H286Q307 186 317 188Q326 189 337 195Q347 200 356 207ZM81 81Q153 8 256 8Q359 8 432 81Q504 153 504 256Q504 359 432 432Q359 504 256 504Q153 504 81 432Q8 359 8 256Q8 153 81 81ZM174 366V160H144V366ZM159 139Q164 139 169 136Q174 133 177 129Q179 124 179 118Q179 110 173 104Q167 98 159 98Q151 98 145 104Q139 110 139 119Q139 127 145 133Q151 139 159 139ZM408 263Q408 234 394 210Q379 185 355 173Q331 160 289 160H220V365H284Q312 365 322 364Q331 362 343 358Q363 350 378 335Q392 321 400 302Q408 283 408 263Z"/></svg>
+          </a>
+          <a class="icon-link" href="https://scholar.google.com/citations?hl=en&amp;user=nGLdGMYAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" aria-label="Google Scholar" title="Google Scholar" target="_blank" rel="noopener noreferrer">
+            <svg class="icon scholar-icon" viewBox="0 0 384 512" aria-hidden="true"><path d="M344 107Q350 108 350 117V246Q350 249 349 252Q347 254 345 256Q342 257 339 257H335Q333 257 331 256Q328 254 327 252Q325 249 325 246V117Q325 107 331 107V90L274 136Q275 137 275 138Q276 139 276 139Q284 153 284 173Q284 188 279 201Q273 213 266 221Q259 228 252 235Q244 241 239 248Q233 255 233 262Q233 269 240 277Q247 284 257 292Q266 299 276 308Q286 316 293 330Q299 344 299 360Q299 382 288 400Q277 417 259 428Q241 438 221 443Q201 448 181 448Q168 448 155 446Q142 444 129 439Q116 434 106 427Q96 419 90 408Q83 396 83 381Q83 364 93 350Q102 335 118 325Q146 308 204 304Q191 287 191 272Q191 264 195 254Q188 255 181 255Q149 255 128 235Q106 214 106 182Q106 179 106 176H20L150 64H364L344 79ZM220 317Q216 316 210 316Q195 316 181 319Q167 322 154 328Q140 333 132 345Q123 356 123 372Q123 386 131 398Q138 409 150 416Q162 422 175 425Q189 429 202 429Q230 429 250 417Q269 404 269 378Q269 373 268 368Q266 363 265 359Q263 355 259 350Q255 346 252 343Q250 340 244 335Q238 330 237 329Q235 328 228 323Q221 318 220 317ZM244 195Q244 178 238 159Q232 140 219 125Q205 110 187 110Q167 110 157 125Q146 139 146 159Q146 177 152 195Q157 213 171 228Q184 242 202 242Q222 242 233 229Q244 215 244 195Z"/></svg>
+          </a>
+          <a class="icon-link" href="https://www.linkedin.com/in/ahmed-abdeljawad-27a352172" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 875 1000" aria-hidden="true"><path d="M812 63H62C28 63 0 91 0 126V874C0 909 28 937 62 937H812C846 937 875 909 875 874V126C875 91 846 63 812 63ZM264 813H135V395H265V813ZM200 338C158 338 124 304 124 263C124 222 158 187 200 187C241 187 275 222 275 263C275 305 242 338 200 338ZM751 813H621V609C621 561 620 499 554 499C486 499 476 552 476 606V813H346V395H470V452H472C489 419 532 385 595 385C726 385 751 472 751 584Z"/></svg>
+          </a>
+
+          <a class="icon-link" href="https://www.researchgate.net/profile/Ahmed-Abdeljawad" aria-label="ResearchGate" title="ResearchGate" target="_blank" rel="noopener noreferrer">
+
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.078.53 9 9 0 0 0-.05.727c-.01.282-.013.621-.013 1.016a31.121 31.123 0 0 0 .014 1.017 9 9 0 0 0 .05.727 7.946 7.946 0 0 0 .077.53h-.005a3.334 3.334 0 0 0 .113.438c.245.743.65 1.303 1.214 1.68.565.376 1.256.564 2.075.564.8 0 1.536-.213 2.105-.603.57-.39.94-.916 1.175-1.65.076-.235.135-.558.177-.93a10.9 10.9 0 0 0 .043-1.207v-.82c0-.095-.047-.142-.14-.142h-3.064c-.094 0-.14.047-.14.141v.956c0 .094.046.14.14.14h1.666c.056 0 .084.03.084.086 0 .36 0 .62-.036.865-.038.244-.1.447-.147.606-.108.385-.348.664-.638.876-.29.212-.738.35-1.227.35-.545 0-.901-.15-1.21-.353-.306-.203-.517-.454-.67-.915a3.136 3.136 0 0 1-.147-.762 17.366 17.367 0 0 1-.034-.656c-.01-.26-.014-.572-.014-.939a26.401 26.403 0 0 1 .014-.938 15.821 15.822 0 0 1 .035-.656 3.19 3.19 0 0 1 .148-.76 1.89 1.89 0 0 1 .742-1.01c.344-.244.593-.352 1.137-.352.508 0 .815.096 1.144.303.33.207.528.492.764.925.047.094.111.118.198.07l1.044-.43c.075-.048.09-.115.042-.199a3.549 3.549 0 0 0-.466-.742 3 3 0 0 0-.679-.607 3.313 3.313 0 0 0-.903-.41A4.068 4.068 0 0 0 19.586 0zM8.217 5.836c-1.69 0-3.036.086-4.297.086-1.146 0-2.291 0-3.007-.029v.831l1.088.2c.744.144 1.174.488 1.174 2.264v11.288c0 1.777-.43 2.12-1.174 2.263l-1.088.2v.832c.773-.029 2.12-.086 3.465-.086 1.29 0 2.951.057 3.667.086v-.831l-1.49-.2c-.773-.115-1.174-.487-1.174-2.264v-4.784c.688.057 1.29.057 2.206.057 1.748 3.123 3.41 5.472 4.355 6.56.86 1.032 2.177 1.691 3.839 1.691.487 0 1.003-.086 1.318-.23v-.744c-1.031 0-2.063-.716-2.808-1.518-1.26-1.376-2.95-3.582-4.355-6.074 2.32-.545 4.04-2.722 4.04-4.9 0-3.208-2.492-4.698-5.758-4.698zm-.515 1.29c2.406 0 3.839 1.26 3.839 3.552 0 2.263-1.547 3.782-4.097 3.782-.974 0-1.404-.03-2.063-.086v-7.19c.66-.059 1.547-.059 2.32-.059z"/></svg>
+
+                  </a>
+          <a class="icon-link" href="https://www.oeaw.ac.at/de/ricam/staff/ahmed-abdeljawad" aria-label="Work profile" title="Work" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 1000 1000" aria-hidden="true"><path d="M625 656C625 673 611 687 594 687H406C389 687 375 673 375 656V563H0V844C0 894 44 937 94 937H906C956 937 1000 894 1000 844V563H625ZM906 250H750V156C750 106 706 63 656 63H344C294 63 250 106 250 156V250H94C44 250 0 294 0 344V500H1000V344C1000 294 956 250 906 250ZM625 250H375V187H625Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Last updated: July, 2026.</div>
+  </footer>
+</body>
+</html>
