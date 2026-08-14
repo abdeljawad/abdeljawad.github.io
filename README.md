@@ -1,4 +1,4 @@
-# Ahmed Abdeljawad — portable static website
+# Ahmed Abdeljawad — static website
 
 This project contains the complete static source for the website.
 
