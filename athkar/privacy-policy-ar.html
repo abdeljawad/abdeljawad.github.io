@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تطبيق أذكار – سياسة الخصوصية | أحمد عبد الجواد</title>
+  <meta name="author" content="Ahmed Abdeljawad">
+  <meta name="description" content="سياسة الخصوصية لتطبيق أذكار لنظام أندرويد من تطوير أحمد عبد الجواد.">
+  <link rel="alternate" hreflang="en" href="https://abdeljawad.github.io/athkar/privacy-policy.html">
+  <link rel="alternate" hreflang="ar" href="https://abdeljawad.github.io/athkar/privacy-policy-ar.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script>
+    (() => {
+      const valid = value => value === "light" || value === "dark";
+      let theme = null;
+
+      try {
+        const urlTheme = new URLSearchParams(window.location.search).get("theme");
+        if (valid(urlTheme)) theme = urlTheme;
+      } catch (_) {}
+
+      if (!theme) {
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          if (valid(savedTheme)) theme = savedTheme;
+        } catch (_) {}
+      }
+
+      if (!theme && window.location.protocol !== "file:") {
+        const match = document.cookie.match(/(?:^|;\s*)theme=(light|dark)(?:;|$)/);
+        if (match) theme = match[1];
+      }
+
+      if (!theme) {
+        theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+      }
+
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+  <link rel="icon" href="../assets/img/abdeljawad_ai.png">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <style>
+    /* Arabic page: a Naskh font for Arabic text, and slightly more generous line spacing. */
+    html[lang="ar"] body { font-family: "Noto Naskh Arabic", "Roboto", system-ui, sans-serif; line-height: 1.9; }
+    html[lang="ar"] code { direction: ltr; unicode-bidi: embed; }
+  </style>
+  <script defer src="../assets/js/site.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container navbar" aria-label="القائمة الرئيسية">
+      <a class="nav-brand" href="../index.html">أحمد&nbsp; <strong>عبد الجواد</strong></a>
+
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="false" aria-label="فتح القائمة">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="site-menu" data-menu>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="../index.html">نبذة</a></li>
+          <li><a class="nav-link" href="../projects/index.html">الأبحاث</a></li>
+          <li>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="تغيير المظهر" title="تغيير المظهر">
+              <svg class="icon theme-icon-moon" viewBox="0 0 1000 1000" aria-hidden="true"><path d="M553 1000C707 1000 849 930 942 815C956 798 940 773 919 777C676 823 454 637 454 392C454 251 529 122 652 52C671 41 666 12 645 8C615 3 584 0 553 0C277 0 53 224 53 500C53 776 277 1000 553 1000Z"/></svg>
+              <svg class="icon theme-icon-sun" viewBox="0 0 1000 1000" aria-hidden="true"><path d="M500 313C397 313 312 397 312 500C312 603 397 687 500 687C603 687 688 603 688 500C688 397 603 313 500 313ZM981 470 796 377 862 181C871 154 845 129 819 138L623 204 530 19C517-6 483-6 470 19L377 204 181 138C154 129 129 155 138 181L204 377 19 470C-6 483-6 517 19 530L204 623 138 819C129 846 155 871 181 862L377 796 470 981C482 1006 517 1006 530 981L622 796 819 862C846 871 870 845 861 819L796 623 981 530C1006 517 1006 483 981 470Z"/></svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+    <main class="container page-content simple-page">
+    <header class="page-heading">
+      <h1>تطبيق أذكار – سياسة الخصوصية</h1>
+      <p class="post-description">تاريخ السريان: ٢٤ نوفمبر ٢٠٢٦</p>
+      <p class="post-description"><a href="privacy-policy.html" hreflang="en" lang="en">Read this page in English</a></p>
+    </header>
+    <article>
+      <p>تنطبق سياسة الخصوصية هذه على تطبيق «أذكار» لنظام أندرويد (اسم الحزمة <code>com.abdeljawad.athkar</code>)، الذي طوّره أحمد عبد الجواد بصفته مطوّرًا مستقلًا.</p>
+
+      <h2>باختصار</h2>
+      <p>لا يجمع تطبيق «أذكار» أي بيانات شخصية، ولا يخزّنها على أي خادم، ولا يشاركها مع أحد. لا يملك التطبيق إذنًا بالوصول إلى الإنترنت، ولا يحتوي على إعلانات أو أدوات تحليل أو تتبّع أو حسابات مستخدمين.</p>
+
+      <h2>المعلومات المحفوظة على جهازك</h2>
+      <p>ليفتح التطبيق كما تركته، يحفظ ما يلي على جهازك فقط:</p>
+      <ul>
+        <li>اللغة التي اخترتها (العربية أو الإنجليزية) ومظهر العرض (فاتح أو داكن أو حسب النظام)؛</li>
+        <li>اختياراتك لحجم الخط، والأجزاء التي تريد إظهارها (النطق، الترجمة، المصدر)؛</li>
+        <li>تفعيل الاهتزاز عند العدّ أو إيقافه؛</li>
+        <li>مجموعات الأذكار التي أتممتها اليوم (التاريخ فقط، لتظهر علامة الإتمام في الشاشة الرئيسية).</li>
+      </ul>
+      <p>لا تغادر هذه المعلومات جهازك عبر التطبيق أبدًا، وتُحذف عند إلغاء تثبيت التطبيق أو مسح بياناته.</p>
+      <p>إذا فعّلت النسخ الاحتياطي الخاص بأندرويد إلى حسابك في Google، فقد يُضمّن أندرويد هذه الإعدادات في تلك النسخة. هذا النسخ الاحتياطي ميزة في جهازك وحسابك في Google، ولا يستطيع المطوّر الوصول إليه.</p>
+
+      <h2>روابط إلى مواقع أخرى</h2>
+      <p>تتضمن بعض الأذكار رابطًا إلى مصدرها على مواقع خارجية (مثل hisnmuslim.com أو turath.io). لا تُفتح هذه الروابط في متصفحك إلا عند الضغط عليها. ولتلك المواقع سياسات خصوصية خاصة بها، لا تشملها هذه السياسة.</p>
+
+      <h2>الأذونات</h2>
+      <p>الإذن الوحيد الذي يستخدمه التطبيق هو الاهتزاز، ليهتزّ العدّاد عند العدّ، ويمكنك إيقافه من إعدادات التطبيق. لا يطلب التطبيق الوصول إلى موقعك أو جهات الاتصال أو الكاميرا أو الميكروفون أو الصور أو الملفات أو أي معلومات شخصية أخرى.</p>
+
+      <h2>الأطفال</h2>
+      <p>تطبيق «أذكار» مناسب لجميع الأعمار. وبما أنه لا يجمع أي بيانات شخصية من أي أحد، فهو لا يجمع أي بيانات من الأطفال كذلك.</p>
+
+      <h2>التغييرات على هذه السياسة</h2>
+      <p>إذا تغيّر التطبيق بما يمسّ خصوصيتك، فسيتم تحديث هذه الصفحة وتغيير تاريخ السريان أعلاه.</p>
+
+      <h2>التواصل</h2>
+      <p>لأي استفسار حول هذه السياسة، تواصل مع أحمد عبد الجواد عبر البريد الإلكتروني <a href="mailto:abdeljawad.ahmed@gmail.com" dir="ltr">abdeljawad.ahmed@gmail.com</a>.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">آخر تحديث: نوفمبر ٢٠٢٦.</div>
+  </footer>
+</body>
+</html>
